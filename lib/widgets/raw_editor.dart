@@ -1055,7 +1055,7 @@ class RawEditorState extends EditorState
   }
 
   @override
-  void hideToolbar() {
+  void hideToolbar([bool hideHandles = true]) {
     if (getSelectionOverlay()?.toolbar != null) {
       getSelectionOverlay()?.hideToolbar();
     }
