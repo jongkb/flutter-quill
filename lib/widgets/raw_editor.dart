@@ -121,6 +121,11 @@ class RawEditorState extends EditorState
   final LayerLink _toolbarLayerLink = LayerLink();
   final LayerLink _startHandleLayerLink = LayerLink();
   final LayerLink _endHandleLayerLink = LayerLink();
+          
+  @override
+  void userUpdateTextEditingValue(TextEditingValue value, SelectionChangedCause cause) {
+    textEditingValue = value;
+  }          
 
   /// Whether to create an input connection with the platform for text editing
   /// or not.
